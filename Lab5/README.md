@@ -4,7 +4,7 @@
 
 **SRN:** PES1UG24CS565
 
-**Assigned repository:** https://github.com/SETAPESU26/L5_16_pet_shelter
+**Assigned repository:** https://github.com/chiranthan-sathrasala/L5_16_pet_shelter
 
 **File analysed:** `pet_shelter.py`
 
@@ -66,23 +66,7 @@ Line numbers refer to the original file. The full table is in `issues.md`.
 |---|-------|------|-----|
 | 11 | E501 / C0301 lines too long | 5, 10, 27 | Wrapped across multiple lines |
 | 12 | E701 / C0321 multiple statements on one line | 41 | `return` moved to its own line |
-| 13 | E302 / E305 blank-line spacing | appeared after other fixes | Added the missing blank lines |
 
-## 5. Commit history
-
-Below is the real, unedited git history of this repository (oldest first).
-
-| Commit | Date (IST) | Message | What it contains |
-|--------|-----------|---------|------------------|
-| `71c62ce` | 16 Oct 2026, 10:08 | Baseline: original pet_shelter.py | Original code, README, empty `issues.md` and `reflection.md` |
-| `c5c45fa` | 16 Oct 2026, 10:11 | Added before static analysis reports | `before/` folder with the original three reports |
-| `4e8d1ef` | 16 Oct 2026, 10:14 | Document static analysis issues | Issue table in `issues.md` |
-| `f6bfb63` | 16 Oct 2026, 10:28 | Fix Bandit issues: parameterized SQL, secrets for codes, handle sqlite errors | Fixes for issues 1-3, Bandit report clean |
-| `b4f9e5e` | 16 Oct 2026, 10:36 | Fix Pylint issues: naming, docstrings, mutable default, bare except, global | Fixes for issues 4-10, Pylint 10.00/10 |
-| `fd758f3` | 16 Oct 2026, 10:42 | Fix Flake8 style issues | Fixes for issues 11-13, Flake8 clean |
-| `1a39fd0` | 16 Oct 2026, 10:48 | updated issues.md | Issue table updated to match the final code |
-
-The lab handout asks for three fix commits (one per tool), which matches the Bandit, Pylint and Flake8 commits above. Each of those commits groups the fixes for that tool's findings.
 
 ## 6. What I learned
 
@@ -94,7 +78,5 @@ The lab handout asks for three fix commits (one per tool), which matches the Ban
 
 ## 7. Deliverables checklist
 
-- `pet_shelter.py` cleaned (13 issues fixed, well beyond the minimum of 4)
 - `issues.md` completed
 - Before and after reports for all three tools
-- Three fix commits (Bandit, Pylint, Flake8)
